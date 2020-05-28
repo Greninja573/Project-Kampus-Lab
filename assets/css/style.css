@@ -1,31 +1,44 @@
+/* Root */
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/* Index.html */
-
-.header{
-    text-align: center;
-    margin-bottom: 25px;
-}
-.container{
+body{
     background-image: url('/assets/img/Background.jpg');
     background-size: cover;
 }
+
 .header{
-    background: #dfe6e9
+    text-align: center;
+    background: black;
+    color: white;
+    grid-area: header;
+}
+.wrapper{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    padding: 10px;
 }
 
+/* Index.html */
+
 .containerindex{
-    display: grid;
+    /* display: grid;
     justify-content: space-evenly;
     grid-template-columns: 35% 35%;
-    grid-gap: 30px;
+    grid-gap: 30px; */
+    display: grid;
+    grid-template: auto auto;
 }
 
 .containerindex > div{
     display: flex;
+    grid-gap: 10px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -39,7 +52,7 @@
 }
 
 .footer{
-    display: flex;
+    grid-area: footer;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -47,6 +60,7 @@
     justify-content: center;
     align-items: center;
     height: 68px;
+    margin-top: 20px;
 }
 /* Navbar */
 nav{
@@ -55,6 +69,15 @@ nav{
     justify-content: space-around;
     padding: 20px 0;
     color: #222f3e;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover{
+    color: #636e72;
 }
 
 nav ul{
@@ -71,45 +94,143 @@ nav ul li a{
 nav ul li a:hover{
     color: #636e72;
 }
-.container{
-    background-image: url('/assets/img/Background.jpg');
-    background-size: cover;
-}
 
 @media screen and (max-width: 768px){
     nav ul{
         width: 50%;
     }
 }
-/* ul{
-    list-style-type: none;
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-}
 
-li{
-    float: right;
-}
-
-li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.bg{
-    background-image: url(/assets/img/Background.jpg);
-    background-size: cover;
-}
-
+/* Home */
 .container{
-    margin-top: 50px;
+    grid-area: main;
+}
+.homegame{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
 }
 
-.text-center{
+.descriptiongame{
+    color: white;
+}
+
+.header2{
     text-align: center;
-} */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    grid-area: header;
+    margin: 5px 0px 15px 0px;
+}
+
+.imghome img{
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Media */
+.img-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.img-container img{
+    width: 400px;
+    height: 200px;
+}
+
+/* Community */
+.img-container2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.img-container2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.img-container img a:hover{
+    background-color: white;
+}
+
+/* Buy */
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+
+.form{
+    border-radius: 5px;
+    background-color: #b2bec3;
+    padding: 20px;
+}
+
+.form label{
+    font-size: 20px;
+}
+
+.genderradio{
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.genderradio label{
+    margin-right: 10px;
+}
+
+.agreement{
+    display: block;
+    position: relative;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btnsubmit{
+    background-color: #0984e3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+
+  .btnsubmit:hover{
+    background-color: #dfe6e9;
+    color: #0984e3;
+  }
