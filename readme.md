@@ -4,11 +4,11 @@ Link Github:
 https://github.com/Greninja573/Project-Kampus-Lab
 
 Link Referensi:
-https://www.w3schools.com/css/css_grid.asp
-https://www.w3schools.com/css/css_margin.asp
-https://www.w3schools.com/css/css_form.asp
-https://www.w3schools.com/css/css3_buttons.asp
-https://flatuicolors.com/
+1. https://www.w3schools.com/css/css_grid.asp
+2. https://www.w3schools.com/css/css_margin.asp
+3. https://www.w3schools.com/css/css_form.asp
+4. https://www.w3schools.com/css/css3_buttons.asp
+5. https://flatuicolors.com/
 
 Link Gambar:
 
