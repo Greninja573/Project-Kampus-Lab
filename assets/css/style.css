@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url('/assets/img/Background.jpg');
+    background-image: url('../img/Background.jpg');
     background-size: cover;
 }
 
@@ -23,6 +23,8 @@ body{
     'menu main main main right right'
     'menu footer footer footer footer footer';
     padding: 10px;
+    /* background-image: url('../img/Background.jpg');
+    background-size: cover; */
 }
 
 /* Index.html */
@@ -153,9 +155,29 @@ nav ul li a:hover{
     width: 200px;
     height: 200px;
 }
-
-.img-container img a:hover{
+.fb img{
     background-color: white;
+}
+
+.img-container a:hover{
+    background-color: white;
+}
+
+/* About */
+
+.descriptionabout{
+    margin: 20px 0px 20px 0;
+    text-align: justify;
+}
+
+.descriptionfeatures{
+    margin: 20px 0px 20px 0;
+    text-align: justify;
+}
+
+.descriptionmechanics{
+    margin: 20px 0px 20px 0;
+    text-align: justify;
 }
 
 /* Buy */
