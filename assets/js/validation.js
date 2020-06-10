@@ -1,7 +1,4 @@
 window.onload = function () {
-
-
-
     let submit = document.getElementById("submit");
 
     let restrictNumeric = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -110,8 +107,8 @@ window.onload = function () {
             alert("Email must be Filled!");
         } else if (validateEmail(email) == false) {
             alert("Email must contains @ and .");
-            // } else if (containsRestrictSymbol(email) == true) {
-            //     alert("Email must not contain symbols except @ and .");
+        // } else if (containsRestrictSymbol(email) == true) {
+        //     alert("Email must not contain symbols except @ and .");
         } else if (username.length < 6) {
             alert("Username must more than 6 Characters!");
         } else if (username.includes(" ")) {
