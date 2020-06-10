@@ -23,17 +23,15 @@ body{
     'menu main main main right right'
     'menu footer footer footer footer footer';
     padding: 10px;
-    /* background-image: url('../img/Background.jpg');
-    background-size: cover; */
 }
 
 /* Index.html */
 
 .containerindex{
-    /* display: grid;
+    display: grid;
     justify-content: space-evenly;
     grid-template-columns: 35% 35%;
-    grid-gap: 30px; */
+    grid-gap: 30px;
     display: grid;
     grid-template: auto auto;
 }
